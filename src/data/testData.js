@@ -38,22 +38,27 @@ export const POSTS = [
 		comments: [ // note: comments can be null
 			{
 				user_id: "melissa_hynes",
-				comment: "I know someone who might be interested. I'll send them your way."
+				comment: "I know someone who might be interested. I'll send them your way.",
+				days_ago: "1d"
 			},
 			{
 				user_id: "brittney_jenning",
-				comment: "I think someone I know from my previous job would be a great fit for this role!"
+				comment: "I think someone I know from my previous job would be a great fit for this role!",
+				days_ago: "2d" // this usually woudl be in ISO_8601 format, but for the sake of simplicity, we'll just use a string
 			},
-		]
+		],
+		days_ago: "2d" // this usually woudl be in ISO_8601 format, but for the sake of simplicity, we'll just use a string
 	},
 	{
 		user_id: "thersa_neilson",
 		post: "Wow, I never knew how organic artichokes were grown. I'm going to try to grow some in my garden this year!",
 		url: "https://www.youtube.com/watch?v=IQxXHYSzip4", // can be null
 		preview_url: "https://www.immerse.education/wp-content/uploads/2022/10/what-are-the-7-different-types-of-architecture.jpg", // can be null
+		days_ago: "2d" // this usually woudl be in ISO_8601 format, but for the sake of simplicity, we'll just use a string
 	},
 	{
 		user_id: "ian_micalief",
 		post: "It's time to talk about our tech stack at LinkedIn. We love ember and node.js. What do you guys use?",
+		days_ago: "2d" // this usually woudl be in ISO_8601 format, but for the sake of simplicity, we'll just use a string
 	}
 ]
