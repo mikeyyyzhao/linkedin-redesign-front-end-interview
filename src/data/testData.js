@@ -45,7 +45,7 @@ export const PROFILES = [
 // 	post: String,
 // 	comments: [Comment]?,
 // 	days_ago: String,
-// preview_content: PreviewContent?
+// 	preview_content: String,
 // }
 
 // PreviewContent schema: 
