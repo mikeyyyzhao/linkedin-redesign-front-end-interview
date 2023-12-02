@@ -1,3 +1,11 @@
+// Profile schema:
+// {
+// 	name: String,
+// 	title: String,
+// 	image: URL?,
+// 	user_id: String,
+// }
+
 export const PROFILES = [
 	{
 		name: "Brad Nelson",
@@ -31,6 +39,29 @@ export const PROFILES = [
 	}
 ]
 
+// Post schema:
+// {
+// 	user_id: String,
+// 	post: String,
+// 	comments: [Comment]?,
+// 	days_ago: String,
+// 	preview_content: PreviewContent?,
+// }
+
+// PreviewContent schema: 
+// {
+// 	url: URL,
+// 	preview_url_image: String?,
+// 	preview_url_image_title: String?,
+// 	preview_url_image_subText: String?,
+// }
+
+// Comment schema:
+// {
+// 	user_id: String,
+// 	comment: String,
+// 	days_ago: String
+// }
 export const POSTS = [
 	{
 		user_id: "brad_nelson",
@@ -52,8 +83,12 @@ export const POSTS = [
 	{
 		user_id: "thersa_neilson",
 		post: "Wow, I never knew how organic artichokes were grown. I'm going to try to grow some in my garden this year!",
-		url: "https://www.youtube.com/watch?v=IQxXHYSzip4", // can be null
-		preview_url: "https://www.immerse.education/wp-content/uploads/2022/10/what-are-the-7-different-types-of-architecture.jpg", // can be null
+		preview_content: { // can be null
+			url: "https://www.youtube.com/watch?v=IQxXHYSzip4", 
+			preview_url_image: "https://www.immerse.education/wp-content/uploads/2022/10/what-are-the-7-different-types-of-architecture.jpg", // can be null
+			preview_url_image_title: "How to grow artichokes", // can be null
+			preview_url_image_subText: "subtext about how to grow artichokes", // can be null
+		},
 		days_ago: "2d" // this usually woudl be in ISO_8601 format, but for the sake of simplicity, we'll just use a string
 	},
 	{
