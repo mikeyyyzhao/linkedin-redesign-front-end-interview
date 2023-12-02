@@ -51,7 +51,7 @@ export const PROFILES = [
 // PreviewContent schema: 
 // {
 // 	url: URL,
-//  preview_url_image: URL?, image of the url
+// 	preview_url_image: String?,
 // 	preview_url_image_title: String?,
 // 	preview_url_image_subText: String?,
 // }
